@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuatro cuentos infantiles</title>
+    <style>
+        /* Define varaibles globales para los estilos */
+        :root {
+            --ink: #3d2b1f;
+            --paper: #fffaf0;
+            --accent: #e67e22;
+            --link: #9b3d16;
+            --footer: #6b5140;
+            --moraleja-bg: #fff0cf;
+            --box-shadow: 0 4px 15px #0002;
+            --header-gradient: linear-gradient(135deg, #7b4397, #dc2430);
+            --body-bg: #f8e8c8;
+        }
+
+        /* Usado para cambiar el comportamiento de los elementos, los tamaños incluyen bordes */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilos para el cuerpo del documento */
+        body {
+            margin: 0;
+            color: var(--ink);
+            font-family: Georgia, serif;
+            line-height: 1.7;
+            background: var(--body-bg);
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            padding: 3rem 1rem;
+            text-align: center;
+            color: white;
+            background: var(--header-gradient);
+        }
+
+        /* Estilos para el título del encabezado */
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 6vw, 4rem);
+        }
+
+        /* Estilos para el párrafo del encabezado */
+        header p {
+            margin-bottom: 0;
+            font-size: 1.15rem;
+        }
+
+        /* Estilos para el área principal */
+        main {
+            width: min(100% - 2rem, 1000px);
+            margin: 2rem auto;
+        }
+
+        /* Estilos para el índice */
+        .indice {
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            background: var(--paper);
+            box-shadow: var(--box-shadow);
+        }
+
+        /* Estilos para los enlaces */
+        a {
+            color: var(--link);
+            font-weight: bold;
+        }
+
+        /* Estilos para los artículos */
+        article {
+            margin-top: 2rem;
+            padding: 2rem;
+            border-radius: 16px;
+            background: var(--paper);
+            box-shadow: var(--box-shadow);
+        }
+
+        /* Estilos para los encabezados de los artículos */
+        article h2 {
+            margin-top: 0;
+            color: var(--link);
+            font-size: 1.8rem;
+        }
+
+        /* Estilos para la moraleja */
+        .moraleja {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-left: 5px solid var(--accent);
+            background: var(--moraleja-bg);
+        }
+
+        /* Estilos para las imágenes de los cuentos */
+        .tale-img {
+            text-align: left;
+            width: 200px;
+            height: 200px;
+            margin: 1rem auto;
+            border-radius: 18px;
+        }
+
+        /* Estilos para el pie de página     */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            color: var(--footer);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Historias para soñar</h1>
+        <p>Cuatro cuentos infantiles llenos de magia, amistad y aprendizajes.</p>
+    </header>
+
+    <main>
+        <!-- Menú de navegación -->
+        <nav class="indice" aria-label="Índice de cuentos">
+            <strong>Índice</strong>
+            <ul>
+                <li><a href="#luna">La estrella y la luna</a></li>
+                <li><a href="#zorro">El zorro generoso</a></li>
+                <li><a href="#semilla">La semilla viajera</a></li>
+                <li><a href="#cometa">El cometa de colores</a></li>
+            </ul>
+        </nav>
+        <!-- Cuento: La estrella y la luna -->
+        <article id="luna">
+            <h2>🌙 La estrella y la luna</h2>
+            <img class="tale-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ebRBqP-50xS5tQmJ2HqoTS4iD3VUNf2Xe2mVRSxgmw&s=10"
+                alt="Estrella y luna">
+
+            <p>Una pequeña estrella pensaba que nadie podía verla desde <em>la Tierra</em>. Cada noche se escondía
+                detrás de una
+                nube, hasta que la luna le explicó que su luz ayudaba a los viajeros a encontrar el camino.</p>
+            <p>La estrella salió de su escondite y brilló con alegría. Desde entonces comprendió que, aunque fuera
+                pequeña, tenía un lugar importante en el cielo.</p>
+            <p class="moraleja"><strong>Moraleja:</strong> Todos tenemos algo especial que compartir.</p>
+            <quote cite="https://www.cuentosinfantiles.net/la-estrella-y-la-luna/">
+                <p>“La estrella comprendió que su luz, aunque pequeña, podía iluminar el camino de muchos.”</p>
+            </quote>
+            <a href="#">Volver al índice</a>
+        </article>
+        <!-- Cuento: El zorro generoso -->
+        <article id="zorro">
+            <h2>🦊 El zorro generoso</h2>
+            <img class="tale-img"
+                src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR4Ej6vJbiSjctGHEnXPFb0gqHZBGDZiRnyPcDyLAYZD8liNFUi_9cUBRl-ou-_GmQVlNPj12FxHGcx53x-jiIrH4XoqEMpJtS8bkwIe8aLrL4l1w94bQ0Gp6V5wJ_pttgtOf76-Q&usqp=CAc"
+                alt="Zorro en el bosque">
+            <p>Un zorro encontró una cesta llena de manzanas y pensó en guardarlas todas. Al ver a una familia de
+                conejos con hambre, recordó que compartir hace que la comida sepa mejor.</p>
+            <p>Repartió las manzanas y todos prepararon una merienda bajo el roble. El zorro descubrió que la amistad
+                era el mejor tesoro.</p>
+            <p class="moraleja"><strong>Moraleja:</strong> Compartir nos hace más felices.</p>
+            <quote cite="https://www.cuentosinfantiles.net/el-zorro-generoso/">
+                <p>“El zorro aprendió que la generosidad trae alegría y nuevos amigos.”</p>
+            </quote>
+            <a href="#">Volver al índice</a>
+        </article>
+        <!-- Cuento: La semilla viajera -->
+        <article id="semilla">
+            <h2>🌱 La semilla viajera</h2>
+            <img class="tale-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT68Fi6TSHph4yOM0cpR_R79iAE7BdcC1WLsJ8y8YSEg&s=10"
+                alt="Semilla en el suelo">
+            <p>El viento llevó una semilla por montañas y ríos hasta un jardín tranquilo. Aunque tenía miedo, echó
+                raíces, bebió agua y esperó con paciencia.</p>
+            <p>Con el tiempo se convirtió en un árbol enorme que ofrecía sombra y frutos a todos los animales del
+                bosque.</p>
+            <p class="moraleja"><strong>Moraleja:</strong> Con paciencia y esfuerzo podemos crecer.</p>
+            <quote cite="https://www.cuentosinfantiles.net/la-semilla-viajera/">
+                <p>“La semilla descubrió que el crecimiento requiere tiempo y cuidado.”</p>
+            </quote>
+            <a href="#">Volver al índice</a>
+        </article>
+        <!-- Cuento: El cometa de colores -->
+        <article id="cometa">
+            <h2>🪁 El cometa de colores</h2>
+            <img class="tale-img"
+                src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJKb1ZcpRfoAV1bIlXFHntIUvBjy9RM5CIT_b7Tqsg8_zLNknt6c6s6JsWcB5I"
+                alt="Niña volando un cometa">
+            <p>Clara construyó un cometa con papel rojo, azul y amarillo. Al principio no conseguía hacerlo volar, pero
+                su abuelo le enseñó a observar el viento.</p>
+            <p>Cuando lo soltó de nuevo, el cometa se elevó sobre el pueblo como un arcoíris. Clara entendió que
+                aprender requiere intentarlo más de una vez.</p>
+            <p class="moraleja"><strong>Moraleja:</strong> No te rindas ante el primer intento.</p>
+            <quote cite="https://www.cuentosinfantiles.net/el-cometa-de-colores/">
+                <p>“Clara aprendió que la perseverancia y la paciencia hacen que los sueños se eleven.”</p>
+            </quote>
+            <a href="#">Volver al índice</a>
+        </article>
+    </main>
+    <!-- Pié de página -->
+    <footer>
+        <address>
+            <p>Contacto: <a href="mailto:info@cuentosinfantiles.net">info@cuentosinfantiles.net</a></p>
+            <p>Teléfono: 123-456-7890 <a href="tel:123-456-7890">Llamar</a></p>
+        </address>
+        <small>Hecho con HTML5</small>
+    </footer>
+</body>
+
+</html>
