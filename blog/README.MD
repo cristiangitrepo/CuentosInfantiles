@@ -29,4 +29,7 @@ Atribuciones de las imágenes usadas en el ejemplo
 >Mapa de Lugo para ir de tapas
 >https://imagenes.elpais.com/resizer/v2/HLZ5JKVEJQ4ZWYELUH6ZC7U3QE.jpg?auth=cc35141b9af33fe29a72d15348af080e7ea9959ff478a780d388b0f89221e230&width=1960
 
+>Logo en SVG
+>https://uilogos.co/?ref=toools
+
 ---
