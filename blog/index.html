@@ -78,27 +78,29 @@
     <header class="w3-top">
         <h1 style="display: none;">CodeLab</h1>
         <nav class="w3-flex w3-white w3-opacity" id="myNavbar">
+            <h2 style="display: none;">Menú</h2>
+            <ul style="list-style: none; display: flex; ">
+                <li><a href="#home" class="w3-button"><i class="fa fa-home"></i>INICIO</a></li>
 
-            <a href="#home" class="w3-button">INICIO</a>
+                <li><a href="#about" class="w3-button w3-hide-small">
+                        <i class="fa fa-user"></i> ACERCA DE
+                    </a></li>
 
-            <a href="#about" class="w3-button w3-hide-small">
-                <i class="fa fa-user"></i> ACERCA DE
-            </a>
+                <li></li><a href="#portfolio" class="w3-button w3-hide-small">
+                    <i class="fa fa-th"></i> MI TRABAJO
+                </a></li>
 
-            <a href="#portfolio" class="w3-button w3-hide-small">
-                <i class="fa fa-th"></i> MI TRABAJO
-            </a>
+                <li></li><a href="#contact" class="w3-button w3-hide-small">
+                    <i class="fa fa-envelope"></i> CONTACTO
+                </a></li>
 
-            <a href="#contact" class="w3-button w3-hide-small">
-                <i class="fa fa-envelope"></i> CONTACTO
-            </a>
-
-            <a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left:auto">
-                <i class="fa fa-search"></i>
-            </a>
+                <li></li><a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left:auto">
+                    <i class="fa fa-search"></i>
+                </a></li>
+            </ul>
 
             <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left:auto" onclick="toggleFunction()"
-                title="Toggle Navigation Menu">
+                title="Abrir el menú de navegación">
                 <i class="fa fa-bars"></i>
             </button>
 
@@ -106,15 +108,19 @@
 
         <!-- Navigation on small screens -->
         <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <nav>
+                <h2 style="display: none;">Menú móvil</h2>
+                <ul style="list-style: none;">
+                    <li><a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ACERCA DE</a>
 
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ACERCA DE</a>
+                    <li><a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MI TRABAJO</a>
+                    </li>
 
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MI TRABAJO</a>
+                    <li><a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a></li>
 
-            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-
-            <a href="#" class="w3-bar-item w3-button">BÚSQUEDA</a>
-
+                    <li> <a href="#" class="w3-bar-item w3-button">BÚSQUEDA</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
