@@ -28,6 +28,11 @@
             line-height: 1.8;
         }
 
+        ul {
+            list-style: none;
+            margin-left: -40px;
+        }
+
         /* Parallax images */
         .bgimg-1,
         .bgimg-2,
@@ -291,30 +296,30 @@
             </article>
 
             <!-- Statistics -->
-            <div class="w3-grid w3-center w3-dark-grey w3-padding-16"
-                style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+            <ul class="w3-grid w3-center w3-dark-grey w3-padding-16"
+                style="margin-bottom: 0px; grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
 
-                <div class="w3-section">
+                <li class="w3-section">
                     <span class="w3-xlarge">14+</span><br>
                     Socios
-                </div>
+                </li>
 
-                <div class="w3-section">
+                <li class="w3-section">
                     <span class="w3-xlarge">55+</span><br>
                     Proyectos realizados
-                </div>
+                </li>
 
-                <div class="w3-section">
+                <li class="w3-section">
                     <span class="w3-xlarge">89+</span><br>
                     Clientes satisfechos
-                </div>
+                </li>
 
-                <div class="w3-section">
+                <li class="w3-section">
                     <span class="w3-xlarge">150+</span><br>
                     Reuniones
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
             <!-- Second Parallax Image -->
             <article class="bgimg-2 w3-display-container w3-opacity-min">
@@ -420,42 +425,46 @@
                         <img src="./assets/img/plano-lugo.webp" class="w3-round" style="width:100%" alt="Mapa de Lugo">
                     </div>
 
-                    <div>
+                    <div
+                        style="border-style: solid; border-color: #777; border-width: .1px; border-radius: 4px; padding: 16px;">
 
-                        <div class="w3-large w3-margin-bottom">
-                            <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
-                            Lugo, GA<br>
-
-                            <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
-                            Teléfono: +34 611252525<br>
-
-                            <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
-                            Email: codelab@protonmail.com
-                        </div>
-
+                        <p><strong>DATOS DE CONTACTO</strong></p>
+                        <hr style="margin-bottom: -10px;">
+                        <ul style="align-items:left; display: inline; list-style: none;">
+                            <li><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
+                                Lugo, GA<br></li>
+                            <li><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
+                                Teléfono: +34 611252525<br></li>
+                            <li><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>
+                                Email: codelab@protonmail.com</li>
+                        </ul>
+                        <hr>
                         <p>
-                            Disponible para un café <i class="fa fa-coffee"></i>,
-                            o déjame un mensaje:
+                            <i class="fa fa-coffee"></i> Invítame a un café, o déjame un mensaje:
                         </p>
 
                         <form action="/action_page.php" target="_blank">
+                            <fieldset
+                                style="margin:1em; padding: 0.5em 1em; border-radius: 1px; border-color: lightgray">
+                                <legend style="padding: 1em; border: 1px solid lightgray; border-radius: 8px;">
+                                    Formulario de contacto</legend>
 
-                            <div class="w3-grid"
-                                style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px">
+                                <ul class="w3-grid"
+                                    style="margin-bottom: 0px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px">
 
-                                <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name">
+                                    <li><input class="w3-input w3-border" type="text" placeholder="Nombre" required
+                                            name="Name"></li>
 
-                                <input class="w3-input w3-border" type="email" placeholder="Email" required
-                                    name="Email">
+                                    <li><input class="w3-input w3-border" type="email" placeholder="Email" required
+                                            name="Email"></li>
 
-                            </div>
+                                    <li><input class="w3-input w3-border" type="text" placeholder="Mensaje" required
+                                            name="Message"></li>
 
-                            <p>
-                                <input class="w3-input w3-border" type="text" placeholder="Mensaje" required
-                                    name="Message">
-                            </p>
-
-                            <button class="w3-button w3-black w3-right" type="submit">Enviar mensaje</button>
+                                </ul>
+                                <br>
+                                <input class="w3-button w3-black w3-right" type="reset" value="Borrar" />
+                                <input class="w3-button w3-black w3-right" type="submit" value="Enviar" />
 
                         </form>
 
@@ -473,14 +482,15 @@
             Navegar al inicio
         </a>
 
-        <div class="w3-xlarge w3-section">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-        </div>
+        <ul class="w3-xlarge" style="list-style: none; display:block; margin-left:-40px;">
+            <li style="display: inline;"><a href="https://www.google.com"><i
+                        class="fa fa-facebook-official w3-hover-opacity"></i></a></li>
+            <li style="display: inline;"><i class="fa fa-instagram w3-hover-opacity"></i></li>
+            <li style="display: inline;"><i class="fa fa-snapchat w3-hover-opacity"></i></li>
+            <li style="display: inline;"><i class="fa fa-pinterest-p w3-hover-opacity"></i></li>
+            <li style="display: inline;"><i class="fa fa-twitter w3-hover-opacity"></i></li>
+            <li style="display: inline;"><i class="fa fa-linkedin w3-hover-opacity"></i></li>
+        </ul>
 
         <p>
             Creado a partir de una plantilla de
@@ -488,9 +498,8 @@
                 class="w3-hover-text-green">w3.css</a>
         </p>
 
-
-
     </footer>
+
     <script>
         // Modal Image Gallery
         function onClick(element) {
