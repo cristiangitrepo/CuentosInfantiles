@@ -8,7 +8,7 @@ Este espacio está diseñado para recopilar todo el código, CSS, JS de la plant
 ---
 
 > enlace al proyecto publicado
-> https://cristiangitrepo.github.io/CuentosInfantiles/blog/index.html#home
+> https://cristiangitrepo.github.io/ejemplos/blog/
 
 
 Atribuciones de las imágenes usadas en el ejemplo
